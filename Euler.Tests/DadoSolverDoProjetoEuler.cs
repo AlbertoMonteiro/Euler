@@ -93,13 +93,13 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema20()
+        public void PossoResolverOProblema14()
         {
-            ISolver problema20 = new Problema20();
+            ISolver problema14 = new Problema14();
 
-            int resultado = Convert.ToInt32(problema20.Solve());
+            int resultado = Convert.ToInt32(problema14.Solve());
 
-            Assert.AreEqual(648, resultado);
+            Assert.AreEqual(837799, resultado);
         }
 
         [Test]
@@ -110,6 +110,16 @@ namespace Euler.Tests
             int resultado = Convert.ToInt32(problema17.Solve());
 
             Assert.AreEqual(21124, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema20()
+        {
+            ISolver problema20 = new Problema20();
+
+            int resultado = Convert.ToInt32(problema20.Solve());
+
+            Assert.AreEqual(648, resultado);
         }
     }
 }
