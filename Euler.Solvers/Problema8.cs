@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class Problema8 : ISolver
     {

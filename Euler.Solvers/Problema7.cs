@@ -1,8 +1,6 @@
-using System;
 using System.Linq;
-using System.Text.RegularExpressions;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class Problema7 : ISolver
     {

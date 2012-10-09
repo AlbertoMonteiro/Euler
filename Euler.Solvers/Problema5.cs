@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class Problema5 : ISolver
     {

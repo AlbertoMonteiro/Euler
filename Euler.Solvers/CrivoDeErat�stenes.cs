@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using System.Linq;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class CrivoDeEratóstenes
     {

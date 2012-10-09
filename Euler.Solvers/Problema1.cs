@@ -1,6 +1,6 @@
 using System.Linq;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class Problema1 : ISolver
     {

@@ -1,4 +1,4 @@
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public interface ISolver
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace ClassLibrary1
+namespace Euler.Solvers
 {
     public class Problema6 : ISolver
     {

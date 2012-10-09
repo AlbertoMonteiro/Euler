@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Linq;
-using ClassLibrary1;
+using Euler.Solvers;
 using NUnit.Framework;
 
-namespace ClassLibrary2
+namespace Euler.Tests
 {
     [TestFixture]
     public class DadoSolverDoProjetoEuler
@@ -62,7 +61,7 @@ namespace ClassLibrary2
             Assert.AreEqual(104743, resultado);
         }
 
-        [Test]
+        [Test, Ignore]
         public void PossoResolverOProblema8()
         {
             ISolver problema8 = new Problema8();
