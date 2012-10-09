@@ -90,5 +90,15 @@ namespace Euler.Tests
 
             Assert.Pass(resultado.ToString());
         }
+
+        [Test]
+        public void PossoResolverOProblema20()
+        {
+            ISolver problema20 = new Problema20();
+
+            int resultado = Convert.ToInt32(problema20.Solve());
+
+            Assert.AreEqual(648, resultado);
+        }
     }
 }
