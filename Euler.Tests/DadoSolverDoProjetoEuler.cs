@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Euler.Solvers;
 using NUnit.Framework;
 
@@ -99,6 +100,16 @@ namespace Euler.Tests
             int resultado = Convert.ToInt32(problema20.Solve());
 
             Assert.AreEqual(648, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema17()
+        {
+            ISolver problema17 = new Problema17();
+
+            int resultado = Convert.ToInt32(problema17.Solve());
+
+            Assert.AreEqual(21124, resultado);
         }
     }
 }

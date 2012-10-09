@@ -42,9 +42,11 @@
   <ItemGroup>
     <Compile Include="CrivoDeEratóstenes.cs" />
     <Compile Include="ISolver.cs" />
+    <Compile Include="NumberExtensions.cs" />
     <Compile Include="Problema1.cs" />
     <Compile Include="Problema11.cs" />
     <Compile Include="Problema12.cs" />
+    <Compile Include="Problema17.cs" />
     <Compile Include="Problema2.cs" />
     <Compile Include="Problema20.cs" />
     <Compile Include="Problema3.cs" />
