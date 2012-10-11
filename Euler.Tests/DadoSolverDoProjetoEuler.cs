@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Linq;
 using Euler.Solvers;
 using NUnit.Framework;
 
@@ -9,7 +9,7 @@ namespace Euler.Tests
     public class DadoSolverDoProjetoEuler
     {
         [Test]
-        public void PossoResolverOProblema1()
+        public void PossoResolverOProblema001()
         {
             ISolver resolvedorProblema1 = new Problema1();
 
@@ -17,7 +17,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema2()
+        public void PossoResolverOProblema002()
         {
             ISolver resolvedorProblema2 = new Problema2();
 
@@ -25,7 +25,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema3()
+        public void PossoResolverOProblema003()
         {
             ISolver resolvedorProblema3 = new Problema3();
 
@@ -33,7 +33,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema5()
+        public void PossoResolverOProblema005()
         {
             ISolver resolvedorProblema5 = new Problema5();
 
@@ -43,7 +43,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema6()
+        public void PossoResolverOProblema006()
         {
             ISolver problema6 = new Problema6();
 
@@ -53,7 +53,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema7()
+        public void PossoResolverOProblema007()
         {
             ISolver problema7 = new Problema7();
 
@@ -63,7 +63,7 @@ namespace Euler.Tests
         }
 
         [Test, Ignore]
-        public void PossoResolverOProblema8()
+        public void PossoResolverOProblema008()
         {
             ISolver problema8 = new Problema8();
 
@@ -73,7 +73,7 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema11()
+        public void PossoResolverOProblema011()
         {
             ISolver problema11 = new Problema11();
 
@@ -83,17 +83,17 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema12()
+        public void PossoResolverOProblema012()
         {
             ISolver problema12 = new Problema12();
 
             int resultado = Convert.ToInt32(problema12.Solve());
 
-            Assert.Pass(resultado.ToString());
+            Assert.AreEqual(76576500, resultado);
         }
 
         [Test]
-        public void PossoResolverOProblema14()
+        public void PossoResolverOProblema014()
         {
             ISolver problema14 = new Problema14();
 
@@ -103,7 +103,17 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema17()
+        public void PossoResolverOProblema015()
+        {
+            ISolver problema15 = new Problema15(2);
+
+            int resultado = Convert.ToInt32(problema15.Solve());
+
+            Assert.AreEqual(6, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema017()
         {
             ISolver problema17 = new Problema17();
 
@@ -113,13 +123,43 @@ namespace Euler.Tests
         }
 
         [Test]
-        public void PossoResolverOProblema20()
+        public void PossoResolverOProblema019()
+        {
+            ISolver problema19 = new Problema19();
+
+            int resultado = Convert.ToInt32(problema19.Solve());
+
+            Assert.AreEqual(171, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema020()
         {
             ISolver problema20 = new Problema20();
 
             int resultado = Convert.ToInt32(problema20.Solve());
 
             Assert.AreEqual(648, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema021()
+        {
+            ISolver problema21 = new Problema21(1, 10000 - 1);
+
+            int resultado = Convert.ToInt32(problema21.Solve());
+
+            Assert.AreEqual(31626, resultado);
+        }
+
+        [Test]
+        public void PossoResolverOProblema022()
+        {
+            ISolver problema22 = new Problema22();
+
+            int resultado = Convert.ToInt32(problema22.Solve());
+
+            Assert.AreEqual(871198282, resultado);
         }
     }
 }

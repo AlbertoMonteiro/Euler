@@ -13,7 +13,6 @@ namespace Euler.Solvers
 
         public IEnumerable<int> Factor(int number)
         {
-            var factors = new List<int>();
             var max = (int)Math.Sqrt(number);  //round down
             for (int factor = 1; factor <= max; ++factor)
             { //test from 1 to the square root, or the int below it, inclusive.
